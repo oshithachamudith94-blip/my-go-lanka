@@ -10,6 +10,7 @@
 }
 
 body {
+  /* මචන්, මෙන්න මෙතන තියෙන text-foreground දැන් අර tailwind.config එකත් එක්ක වැඩ කරනවා */
   @apply bg-background text-foreground font-sans antialiased;
   background-image: 
     radial-gradient(at 0% 0%, rgba(0, 89, 153, 0.05) 0px, transparent 50%),
@@ -21,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   @apply font-display font-bold tracking-tight;
 }
 
+/* Glassmorphism Classes */
 .glass-card {
   @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
 }
