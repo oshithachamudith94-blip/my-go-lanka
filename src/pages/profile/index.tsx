@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { User, Mail, Phone, Save, ArrowLeft, ShieldCheck, MapPin, Calendar, Clock } from "lucide-react";
 import { useRouter } from "next/router";
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
+import toast from "react-hot-toast";
 
 export default function ProfilePage() {
   const router = useRouter();
