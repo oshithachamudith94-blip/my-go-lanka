@@ -8,10 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "#005999", // MyGoLanka Logo Blue
+          foreground: "#FFFFFF",
+        },
+        secondary: {
+          DEFAULT: "#FF6600", // MyGoLanka Logo Orange
+          foreground: "#FFFFFF",
+        },
+        success: "#76B828",
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        display: ["Outfit", "sans-serif"],
       },
     },
   },
