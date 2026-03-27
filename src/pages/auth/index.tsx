@@ -6,13 +6,7 @@ import {
   Mail, Lock, User, Eye, EyeOff, CheckCircle, 
   Map, Briefcase, ChevronRight, ArrowRight, ShieldCheck, Globe
 } from "lucide-react";
-import dynamic from 'next/dynamic';
-
-// Dynamic import for Spline to avoid SSR issues
-const Spline = dynamic(() => import('@splinetool/react-spline'), {
-  ssr: false,
-  loading: () => <div className="w-full h-full flex items-center justify-center bg-slate-50"><Globe className="w-12 h-12 text-primary/20 animate-spin" /></div>
-});
+import Spline from '@splinetool/react-spline';
 
 export default function AuthPage() {
   const router = useRouter();
